@@ -13,8 +13,8 @@ function loadFormData() {
   try {
     const parsedData = JSON.parse(savedData);
     if (parsedData.email) {
-      form.elements.message.value = parsedData.message;
-      formData.message = parsedData.message;
+      form.elements.email.value = parsedData.email;
+      formData.email = parsedData.email;
     }
     if (parsedData.message) {
       form.elements.message.value = parsedData.message;
@@ -37,7 +37,7 @@ form.addEventListener('submit', event => {
   const { email, message } = formData;
 
   if (!email || !message) {
-    alert('Fill please all fields');
+    alert('Заполни оба поля');
     return;
   }
 
