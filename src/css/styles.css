@@ -12,7 +12,86 @@
 
 /* Sections style */
 @import url('./header.css');
-@import url('./vite-promo.css');
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(223, 223, 223);
+  width: 408px;
+  height: 296px;
+  margin: auto;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 8px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04;
+  color: #2e2f42;
+}
+
+input {
+  height: 40px;
+  width: 400px;
+  margin-bottom: 10px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+textarea {
+  width: 400px;
+  height: 85px;
+  margin-bottom: 10px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 80px;
+}
+
+.btn {
+  background-color: #4E75FF;
+border-radius: 8px;
+padding: 8px 16px;
+width: 95px;
+height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover {
+background-color: #6C8CFF;
+}
+
+.gallery {
+    max-width: 1128px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.gallery-image {
+    width: 360px;
+    height: 200px;
+    transition: transform 1s ease;
+}
+.gallery-image:hover {
+    transform: scale(1.1);
+}
